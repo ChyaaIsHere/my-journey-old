@@ -1,0 +1,196 @@
+#albumBG {
+  position: relative;
+  overflow: hidden;
+}
+
+#albumBG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./foto/albumbg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(78%);
+  z-index: -1;
+  transform: scale(1.06);
+}
+
+#jumbotron {
+  position: relative;
+  overflow: hidden;
+}
+
+#jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./foto/profilebg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(6.2px) brightness(90%);
+  transform: scale(1.25);
+  z-index: -1;
+}
+
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.page-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pict {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.pict img {
+  border-radius: 10px;
+}
+
+.text-content {
+  text-align: right;
+  color: white;
+}
+
+.geserwoy {
+  margin-top: 2em;
+}
+
+.geserwoy h1 {
+  font-size: 2em;
+}
+
+.slideshow-container {
+  margin: auto;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 70px;
+  width: 95%;
+}
+
+.slides {
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  display: none;
+  object-position: center;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ffae44;
+  position: absolute;
+  height: 8px;
+  top: 10;
+  border-radius: 20px;
+}
+
+#hilang {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-40px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.rounded {
+  box-shadow: 3px 3px 3px #44423d6c;
+  margin-bottom: 1rem;
+}
+
+.icon-color {
+  color: #979797;
+  font-size: 18px;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+.white-box-container {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.white-box {
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.aos-init {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#textS {
+  text-shadow: 2px 2px 4px #44423d6c;
+  font-weight: 800;
+}
+
+.about-section {
+  margin-top: 100vh;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.about-section.active {
+  background-color: #d4edda;
+}
+
+.josefin {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.nunito {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+/* photo grid */
