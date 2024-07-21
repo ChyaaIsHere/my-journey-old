@@ -28,6 +28,16 @@
 
     <!-- Navbar -->
     <style>
+        @media screen and (max-width: 768px) {
+            .albumCoy {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .albumCoy img {
+                height: 170px;
+            }
+        }
+
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -108,9 +118,56 @@
         </section>
         <!-- end jumbotron -->
 
+        <div class="comment-box">
+            <div class="comment-header">
+            </div>
+            <div class="comment-content">
+                <h1>Segera ditambahkan.</h1>
+                <p style="color: grey; opacity: 40%;">This is My Journey! ~</p>
+            </div>
+            <div class="comment-info">
+                <span class="comment-time">21:06 | Ahad, 21 Juli 2024</span>
+            </div>
+        </div>
+
         <!-- image -->
-        <h1 class="text-center josefin" style="margin-bottom: 3em;" data-aos="fade-pop">Segera di tambahkan ...</h1>
+        <!-- <div class="galeri" id="galeriCuy">
+            <img src="./album/photo1.jpg" onclick="showPreview(this.src)">
+            <img src="./album/photo2.jpg" onclick="showPreview(this.src)">
+            <img src="./album/photo3.jpg" onclick="showPreview(this.src)">
+            <img src="./album/photo4.jpg" onclick="showPreview(this.src)">
+            <img src="./album/photo5.jpg" onclick="showPreview(this.src)">
+            <img src="./album/photo6.jpg" onclick="showPreview(this.src)">
+            <img src="./album/photo7.jpg" onclick="showPreview(this.src)">
+            <img src="./album/photo8.jpg" onclick="showPreview(this.src)">
+            <img src="./album/photo9.jpg" onclick="showPreview(this.src)">
+        </div>
         <!-- end image -->
+
+        <!-- preview image -->
+        <!-- <div class="previewImage" id="previewImage" style="display: none;">
+            <img id="previewImg">
+            <span onclick="closePreviewImg()"><i class="fa fa-times-circle"></i></span>
+        </div> -->
+        <!-- end preview image -->
+
+        <!-- javascript -->
+        <script>
+            function showPreview(src) {
+                const previewImg = document.getElementById("previewImg");
+                const previewImageContainer = document.getElementById("previewImage");
+
+                previewImg.src = src;
+                previewImageContainer.style.display = "flex";
+            }
+
+            function closePreviewImg() {
+                const previewImageContainer = document.getElementById("previewImage");
+                previewImageContainer.style.display = "none";
+            }
+
+        </script>
+        <!-- end javascript -->
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -121,6 +178,7 @@
         <script>
             AOS.init();
         </script>
+
 
         <!-- footer -->
         <hr>

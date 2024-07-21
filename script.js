@@ -1,32 +1,3 @@
-// slider
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.querySelectorAll(".slides");
-  let progressBar = document.querySelector(".progress-bar");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  slides[slideIndex - 1].classList.add("active");
-
-  // Update progress bar
-  let progressWidth = (slideIndex / slides.length) * 100 + "%";
-  progressBar.style.width = progressWidth;
-
-  setTimeout(showSlides, 4000);
-}
-
 // about me
 function scrollToAbout() {
   event.preventDefault();
@@ -88,33 +59,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-// about
-window.addEventListener("scroll", function () {
-  var aboutSection = document.getElementById("tentangku");
-  var rect = aboutSection.getBoundingClientRect();
-  var viewportHeight = window.innerHeight;
-
-  if (rect.top >= 0 && rect.bottom <= viewportHeight) {
-    aboutSection.classList.add("active");
-  } else {
-    aboutSection.classList.remove("active");
-  }
-});
-
-// grid photo
-function showPreview() {
-  var modal = document.getElementById("previewModal");
-  var img = document.querySelector(".img img");
-  var modalImg = document.getElementById("imgPreview");
-  var captionText = document.getElementById("caption");
-
-  modal.style.display = "block";
-  modalImg.src = img.src; // Assuming img.src contains the path to the image
-  captionText.innerHTML = "Preview Image"; // You can customize this caption
-}
-
-function closePreview() {
-  var modal = document.getElementById("previewModal");
-  modal.style.display = "none";
-}
