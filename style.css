@@ -18,12 +18,12 @@
   transform: scale(1.06);
 }
 
-#videoBG {
+#VideoNi {
   position: relative;
   overflow: hidden;
 }
 
-#videoBG::before {
+#VideoNi::before {
   content: "";
   position: absolute;
   top: 0;
