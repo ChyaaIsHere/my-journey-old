@@ -34,7 +34,7 @@
   background-size: cover;
   background-position: center;
   filter: blur(6.2px) brightness(90%);
-  transform: scale(1.25);
+  transform: scale(2.5);
   z-index: -1;
 }
 
