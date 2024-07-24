@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>My Journey! | Albumku</title>
+    <title>My Journey! | Fiber Optik</title>
     <link rel="icon" type="image/png" href="./foto/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,16 +30,6 @@
 
     <!-- Navbar -->
     <style>
-        @media screen and (max-width: 768px) {
-            .albumCoy {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .albumCoy img {
-                height: 170px;
-            }
-        }
-
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -74,7 +64,7 @@
                         <li class="nav-item">
                             <a class="nav-link nunito" aria-current="page" href="./index.html">Beranda</a>
                         </li>
-                        <a class="nav-link nunito" aria-current="page" href="#">Albumku</a>
+                        <a class="nav-link nunito" aria-current="page" href="./album.html">Albumku</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nunito" aria-current="page" href="./video.html">Videoku</a>
@@ -89,18 +79,16 @@
         <!-- End Navbar -->
 
         <!-- jumbotron -->
-        <section id="albumBG" style="overflow-y: hidden !important; overflow-x: hidden !important;">
+        <section id="fiberOptik" style="overflow-y: hidden !important; overflow-x: hidden !important;">
             <div class="container">
                 <div class="row">
                     <h1 class="nunito text-white text-center"
                         style="font-weight: 755; font-style: italic; margin-top: 3em;" data-aos="fade-right" id="textS"
                         data-aos-duration="1000">
-                        Albumku!
+                        Fiber Optik
                     </h1>
                     <p class="nunito text-white text-center" id="textS" data-aos="fade-left" data-aos-duration="1000"
-                        style="font-size: 15px; margin-bottom: 3em;">Sekumpulan
-                        foto yang
-                        bersejarah bagiku ..</p>
+                        style="font-size: 15px; margin-bottom: 3em;">Materi yang akan dibahas tentang Fiber Optik.</p>
                 </div>
             </div>
             <div class="svg-container">
@@ -113,44 +101,18 @@
         </section>
         <!-- end jumbotron -->
 
-        <h1 class="josefin text-center">Miss this moment...</h1>
-
-        <!-- image -->
-        <div class="galeri" id="galeriCuy" data-aos="fade-pop" data-aos-duration="1000">
-            <img src="./album/photo1.jpeg" onclick="showPreview(this.src)">
-            <img src="./album/photo2.jpg" onclick="showPreview(this.src)">
-            <img src="./album/photo3.jpeg" onclick="showPreview(this.src)">
-            <img src="./album/photo4.jpeg" onclick="showPreview(this.src)">
-            <img src="./album/photo5.jpeg" onclick="showPreview(this.src)">
-            <img src="./album/photo6.jpeg" onclick="showPreview(this.src)">
-            <img src="./album/photo7.jpg" onclick="showPreview(this.src)">
+        <!-- content -->
+        <div class="comment-box">
+            <div class="comment-header">
+                <div class="comment-info"></div>
+            </div>
+            <div class="materi-content">
+                <h1 class="text-center">Masih Kosong.</h1>
+                <span class="comment-time josefin">10:17 - Rabu, 24 Juli 2024</span>
+            </div>
         </div>
-        <!-- end image -->
 
-        <!-- preview image -->
-        <div class="previewImage" id="previewImage" style="display: none;">
-            <img id="previewImg">
-            <span onclick="closePreviewImg()"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <!-- end preview image -->
-
-        <!-- javascript -->
-        <script>
-            function showPreview(src) {
-                const previewImg = document.getElementById("previewImg");
-                const previewImageContainer = document.getElementById("previewImage");
-
-                previewImg.src = src;
-                previewImageContainer.style.display = "flex";
-            }
-
-            function closePreviewImg() {
-                const previewImageContainer = document.getElementById("previewImage");
-                previewImageContainer.style.display = "none";
-            }
-
-        </script>
-        <!-- end javascript -->
+        <!-- end content -->
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -161,7 +123,6 @@
         <script>
             AOS.init();
         </script>
-
 
         <!-- footer -->
         <hr>

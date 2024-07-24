@@ -1,0 +1,215 @@
+/* mobile page */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  #HaloText {
+    font-size: 20px;
+    font-size: 40px;
+    margin-top: 2em;
+    font-weight: 800;
+  }
+
+  .text-content {
+    width: 100%;
+  }
+  #deskripsi {
+    font-size: 15px;
+    font-size: 16px;
+    margin-bottom: 7em;
+  }
+  #h1Materi {
+    font-size: 20px;
+  }
+  #Article h1 {
+    margin-bottom: 2em;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 1.25em;
+  }
+  #Article div {
+    font-size: 13px;
+    margin-bottom: 5.4em;
+    font-weight: 500;
+  }
+  #DDindexJi {
+    font-size: 20px;
+  }
+  #DDindexJ {
+    font-size: 20px;
+  }
+  #DDindex {
+    font: 18px;
+  }
+  #garisBawah {
+    margin-bottom: 1px;
+  }
+  .previewImage img {
+    width: 100%;
+    transform: scale(1.3);
+    margin-top: 4em;
+    max-width: 300px;
+  }
+
+  .previewImage span {
+    position: absolute;
+    right: 5%;
+    bottom: 79%;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+/* desktop page */
+@media (min-width: 769px) {
+  #materiBG h1 {
+    font-size: 70px;
+    margin-top: 2em;
+    font-weight: 600;
+  }
+  #deskripsi {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #welcome {
+    font-size: 60px;
+    text-shadow: 2px 2px 4px #44423d6c;
+    font-weight: 800;
+  }
+  #HaloText {
+    font-size: 60px;
+    font-weight: 800;
+  }
+  #tentangku {
+    font-size: 32px;
+  }
+  #Article h1 {
+    font-size: 40px;
+    margin-bottom: 1em;
+  }
+  #Article div {
+    font-size: 20px;
+    margin-bottom: 2em;
+    font-weight: 500;
+  }
+  #logoIndex {
+    font-size: 40px;
+  }
+  #garisBawah {
+    margin-bottom: 30px;
+  }
+  .previewImage img {
+    width: 100%;
+    margin-top: 4em;
+    max-width: 300px;
+    transform: scale(3);
+  }
+
+  .previewImage span {
+    position: absolute;
+    right: 5%;
+    bottom: 79%;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+#DDindexJ {
+  text-align: right;
+}
+#DDindex {
+  text-align: right;
+}
+
+#fiberOptik {
+  position: relative;
+  overflow: hidden;
+}
+
+#fiberOptik::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./foto/fiber-optikBG.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(78%);
+  z-index: -1;
+  transform: scale(1.06);
+}
+
+#cisco {
+  position: relative;
+  overflow: hidden;
+}
+
+#cisco::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./foto/ciscoBG.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(78%);
+  z-index: -1;
+  transform: scale(1.06);
+}
+
+#MikrotikBG {
+  position: relative;
+  overflow: hidden;
+}
+
+#MikrotikBG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./foto/mikrotik.png);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(78%);
+  z-index: -1;
+  transform: scale(1.06);
+}
+
+#pkkBG {
+  position: relative;
+  overflow: hidden;
+}
+
+#pkkBG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./foto/mikrotik.png);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(78%);
+  z-index: -1;
+  transform: scale(1.06);
+}
+
+#textS {
+  text-shadow: 2px 2px 4px #44423d6c;
+}
