@@ -67,7 +67,7 @@
     cursor: pointer;
   }
   #materiJudul{
-    text-shado
+    margin-top: 3em;
   }
 }
 
@@ -215,4 +215,44 @@
 
 #textS {
   text-shadow: 2px 2px 4px #44423d6c;
+}
+
+#sysAdmin {
+  position: relative;
+  overflow: hidden;
+}
+
+#sysAdmin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./foto/SysAdminBG.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(78%);
+  z-index: -1;
+  transform: scale(1.06);
+}
+
+#pkkBG {
+  position: relative;
+  overflow: hidden;
+}
+
+#pkkBG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./foto/PKKbg.jpeg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(78%);
+  z-index: -1;
+  transform: scale(1.06);
 }
