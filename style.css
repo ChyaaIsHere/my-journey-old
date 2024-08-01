@@ -191,31 +191,31 @@ body {
   transform: scale(0.97);
 }
 
-.previewImage {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  top: 0;
-  left: 0;
-  align-items: center;
-  z-index: 1000;
-  justify-content: center;
+
+
+/* Gaya untuk teks deskripsi gambar */
+#previewDescription {
+  padding: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7); /* Background hitam transparan */
+  border-radius: 5px;
+  text-align: center;
+  z-index: 1001;
+  font-size: 16px; /* Ukuran font deskripsi */
 }
 
-.previewImage img {
-  width: 100%;
-  margin-top: 4em;
-  max-width: 300px;
-}
-
+/* Gaya untuk tombol close */
 .previewImage span {
   position: absolute;
   right: 5%;
-  bottom: 79%;
+  top: 13%;
   font-size: 40px;
   color: #fff;
   cursor: pointer;
+}
+
+.previewImage img{
+  border-radius: 20px;
 }
 
 .container {
@@ -341,3 +341,4 @@ body {
     height: 25px;
   }
 }
+

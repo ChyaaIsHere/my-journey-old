@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Journey! | Maintenance</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
             display: flex;
@@ -11,34 +12,42 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: #f0f0f0;
-            font-family: Arial, sans-serif;
-            color: #333;
+            background: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #444;
         }
         .container {
-            text-align: center;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
+            width: 100%;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  text-align: center;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 20px;
+            color: #696969;
         }
         p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin-bottom: 30px;
+            color: #555;
         }
         .spinner {
-            width: 50px;
-            height: 50px;
-            border: 6px solid #f0f0f0;
-            border-top: 6px solid #333;
+            width: 60px;
+            height: 60px;
+            border: 8px solid #f0f0f0;
+            border-top: 8px solid #696969;
             border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 30px auto;
+            animation: spin 1.2s linear infinite;
+            margin: 20px auto 30px auto;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -49,9 +58,10 @@
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
+                width: 90%;
             }
             h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             p {
                 font-size: 1rem;
@@ -61,22 +71,113 @@
         /* Desktop styles */
         @media (min-width: 601px) {
             .container {
-                max-width: 600px;
+                max-width: 500px;
             }
             h1 {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
             p {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
         }
+        .dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #b0b0b0; /* Warna abu-abu */
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #b0b0b0; /* Warna abu-abu */
+    box-shadow: 0 0 0 0 rgba(176, 176, 176, 0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: #8c8c8c; /* Warna abu-abu lebih gelap */
+    box-shadow: 0 0 0 10px rgba(176, 176, 176, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: #b0b0b0; /* Warna abu-abu */
+    box-shadow: 0 0 0 0 rgba(176, 176, 176, 0.7);
+  }
+}
+.dots {
+            display: inline-block;
+            position: relative;
+        }
+        .dots::after {
+            content: '...';
+            animation: dots 1.7s steps(5, end) infinite;
+        }
+        @keyframes dots {
+            0% { content: '.'; }
+            50% { content: '..'; }
+            70% { content: '...'; }
+            90% { content: '...'; }
+            100% { content: '...'; }
+        }
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="spinner"></div>
-        <h1>Tunggu bentar ..</h1>
-        <p>Lagi ada maintenance nih.. buka lagi nanti ya :D</p>
+    <div class="container" data-aos="zoom-in" data-aos-duration="1000">
+        <h1 draggable="false">Sebentar ya..</h1>
+        <section class="dots-container" style="margin-top: 2em; margin-bottom: 2em;">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </section>          
+        <p draggable="false">Saya sedang melakukan maintenance.<br>Silakan coba lagi nanti ~</p>
+        <p draggable="false">Mencoba membuka website lagi<br>dalam 10 detik <span class="dots"></span></p>
     </div>
+    <script>
+
+const refreshUrl = 'index.html';
+
+setInterval(function() {
+    window.location.href = refreshUrl;
+}, 10000);
+
+    </script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
 </body>
 </html>
