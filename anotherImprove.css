@@ -101,6 +101,9 @@
     z-index: 1001;
     font-size: 13px; /* Ukuran font deskripsi */
   }
+  .vdebianLogo {
+    width: 80px;
+  }
 }
 
 /* desktop page */
@@ -109,6 +112,9 @@
     font-size: 70px;
     margin-top: 2em;
     font-weight: 600;
+  }
+  .vdebianLogo {
+    width: 200px;
   }
   .previewImage {
     width: 100%;
