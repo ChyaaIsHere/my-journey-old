@@ -104,6 +104,9 @@
   #vdebianLogo {
     width: 80px;
   }
+  #fiber-optik{
+    width: 100px;
+  }
 }
 
 /* desktop page */
@@ -114,7 +117,7 @@
     font-weight: 600;
   }
   #vdebianLogo {
-    width: 90px;
+    width: 180px;
   }
   .previewImage {
     width: 100%;
@@ -193,6 +196,10 @@
     text-align: center;
     z-index: 1001;
     font-size: 16px; /* Ukuran font deskripsi */
+  }
+  #fiber-optik{
+    align-content: center;
+    width: 200px;
   }
 }
 
@@ -325,4 +332,8 @@
   filter: blur(5px) brightness(78%);
   z-index: -1;
   transform: scale(1.06);
+}
+
+.materi-content{
+  align-items: center !important;
 }
