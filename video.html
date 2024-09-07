@@ -49,7 +49,7 @@
     <!-- navbar -->
 
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top navbar-transparent" id="navbar">
             <div class="container-fluid">
                 <a style="margin-left: 0.5em;" class="navbar-brand caveat" id="brand">
                     My Journey! <i class="fa fa-solid fa-paper-plane" style="margin-left: 0.2em;"></i>
@@ -64,18 +64,57 @@
                         <li class="nav-item">
                             <a class="nav-link nunito" aria-current="page" href="./index.html">Beranda</a>
                         </li>
-                        <a class="nav-link nunito" aria-current="page" href="./album.html">Albumku</a>
+                        <li class="nav-item">
+                            <a class="nav-link nunito" aria-current="page" href="./album.html">Albumku</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nunito" aria-current="page" href="./video.html">Videoku</a>
+                            <a class="nav-link nunito" aria-current="page" href="#">Videoku</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link nunito" aria-current="page" href="./materi.html">Materi</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nunito" href="./materi.html" role="button">
+                                Materi
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./cisco.html">Cisco</a></li>
+                                <li><a class="dropdown-item" href="./mikrotik.html">Mikrotik</a></li>
+                                <li><a class="dropdown-item" href="./fiber-optik.html">Fiber Optic</a></li>
+                                <li><a class="dropdown-item" href="./sysadmin.html">SysAdmin</a></li>
+                                <li><a class="dropdown-item" href="./pkk.html">PKK</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        
+        <style>
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            position: absolute;
+            will-change: transform;
+            transform: translate3d(0, 0, 0);
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 160px;
+            padding: 0.5rem 0;
+            margin: 0.125rem 0 0;
+            font-size: 1rem;
+            color: #212529;
+            text-align: left;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.25rem;
+        }
+        .dropdown-menu {
+            z-index: 1050;
+        }
+        </style>
         <!-- End Navbar -->
 
         <!-- jumbotron -->
