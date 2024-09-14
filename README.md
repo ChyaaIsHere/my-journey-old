@@ -1,14 +1,17 @@
+
 # 🌍 My Journey
 
 Selamat datang di **My Journey**! 🎉  
 Ini adalah web portofolio pribadi saya, di mana saya membagikan cerita tentang perjalanan hidup, pengalaman, serta berbagai pengetahuan dan materi yang saya kumpulkan selama bertahun-tahun.
 
+
 ## 📖 Tentang **My Journey**
 
 **My Journey** adalah refleksi dari pengalaman hidup saya. Di dalamnya, saya membahas berbagai aspek kehidupan, termasuk:
-- **Perjalanan Karir**: Langkah-langkah yang saya ambil untuk kedepannya
+- **Perjalanan Karir**: Langkah-langkah yang saya ambil untuk kedepannya.
 - **Hobi & Minat**: Hal-hal yang saya cintai dan kerjakan di waktu luang.
 - **Materi & Artikel**: Berbagai topik menarik yang saya bagikan untuk menginspirasi dan saya harap dapat membantu orang lain.
+
 
 ## 🌟 Apa yang ada disini?
 Disini saya menceritakan tentang apa yang saya lakukan. Ntah itu bersama dengan teman-teman saya, dan kegiatan yang seru lainnya!
@@ -18,6 +21,7 @@ Saya juga menambahkan hasil kerja saya selama ini seperti: Project sekolah ataup
 - **Proyek & Portofolio**: Daftar karya dan proyek yang telah saya kerjakan.
 - **Materi Belajar**: Berbagi pengetahuan tentang hal-hal yang saya pelajari dan kuasai.
 - **Hasil Kerja**: Kumpulan gambar tentang hasil kerja saya.
+
 
 ## 🚀 Teknologi yang Digunakan
 
