@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>My Journey! | My Photos</title>
+    <title>My Journey! | My Projects</title>
     <link rel="icon" type="image/png" href="./foto/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,16 +30,6 @@
 
     <!-- Navbar -->
     <style>
-        @media screen and (max-width: 768px) {
-            .albumCoy {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .albumCoy img {
-                height: 170px;
-            }
-        }
-
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -79,8 +69,8 @@
                                 Albumku
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">My Photos</a></li>
-                                <li><a class="dropdown-item" href="./MyProject.html">My Project</a></li>
+                                <li><a class="dropdown-item" href="./album.html">My Photos</a></li>
+                                <li><a class="dropdown-item" href="#">My Project</a></li>
                                 <li><a class="dropdown-item" href="#">Random Pict</a></li>
                                 <li><a class="dropdown-item" href="#">Videos</a></li>
                             </ul>
@@ -135,17 +125,18 @@
         </style>
         <!-- End Navbar -->
 
+        
         <!-- jumbotron -->
-        <section id="albumBG" style="overflow-y: hidden !important; overflow-x: hidden !important;">
+        <section id="bgProject" style="overflow-y: hidden !important; overflow-x: hidden !important;">
             <div class="container">
                 <div class="row">
                     <h1 class="nunito text-white text-center"
                         style="font-weight: 755; font-style: italic; margin-top: 3em;" data-aos="fade-right" id="textS"
                         data-aos-duration="1000">
-                        My Photos
+                        My Project
                     </h1>
                     <p class="nunito text-white text-center" id="textS" data-aos="fade-left" data-aos-duration="1000"
-                        style="font-size: 15px; margin-bottom: 3em;">Perjalanan saya selama ini ...</p>
+                        style="font-size: 15px; margin-bottom: 3em;">Proyek dan hasil kerja saya selama di sekolah, saya taruh disini.</p>
                 </div>
             </div>
             <div class="svg-container">
@@ -157,66 +148,229 @@
             </div>
         </section>
         <!-- end jumbotron -->
+        <h1 class="josefin text-center" style="margin-bottom: 2em;">Hasil kerajinan tangan saya ...</h1>
 
-        <h1 class="josefin text-center">Miss this moment...</h1>
+        <!-- content -->
+             <section id="projects" data-aos="fade-pop" data-aos-duration="1000">
+        <div class="container">
+            <div class="row">
 
-<!-- image -->
-<!-- image -->
-<div class="galeri" id="galeriCuy" data-aos="fade-pop" data-aos-duration="1000">
-    <img src="./thumbnail/photo1-thumb.jpeg" data-full-src="./album/photo1.jpeg" data-description="Foto saya dan teman teman saya saat selesai tampil drama jurusan" onclick="showPreview(this)">
-    <img src="./thumbnail/photo2-thumb.jpeg" data-full-src="./album/photo2.jpg" data-description="Ini dengan teman-teman kelas industri saya, kami baru saja menyelesaikan proyek IoT Smart Home!" onclick="showPreview(this)">
-    <img src="./thumbnail/photo3-thumb.jpeg" data-full-src="./album/photo3.jpeg" data-description="Saya dan dua teman saya mau bersiap-siap untuk kegiatan 17 Agustus di SMKN 15 Kota Bekasi!" onclick="showPreview(this)">
-    <img src="./thumbnail/photo4-thumb.jpeg" data-full-src="./album/photo4.jpeg" data-description="Foto ini diambil sebelum penampilan drama jurusan saya!" onclick="showPreview(this)">
-    <img src="./thumbnail/photo5-thumb.jpeg" data-full-src="./album/photo5.jpeg" data-description="Saya dan teman-teman saya mampir ke MGT setelah kerja kelompok.. Refreshing sebelum ulangan katanya haha..." onclick="showPreview(this)">
-    <img src="./thumbnail/photo6-thumb.jpeg" data-full-src="./album/photo6.jpeg" data-description="Foto ini diambil saat saya dan teman-teman saya sedang mengerjakan tugas Bahasa Indonesia!" onclick="showPreview(this)">
-    <img src="./thumbnail/photo7-thumb.jpg" data-full-src="./album/photo7.jpg" data-description="Kami merayakan hari Ulang Tahun Nafis ditempat ini" onclick="showPreview(this)">
-    <img src="./thumbnail/photo8-thumb.jpg" data-full-src="./album/photo8.jpg" data-description="Foto bareng sama anak-anak dari SMK yang berbeda. Tapi tujuan kami semua disini sama, Untuk Mengikuti Lomba di SMK KGB 2" onclick="showPreview(this)">
-    <img src="./thumbnail/masaSMP-thumb.jpeg" data-full-src="./album/masaSMP.jpeg" data-description="Saya bersama teman-teman smp saya ..." onclick="showPreview(this)">
-    <img src="./thumbnail/photo9-thumb.jpeg" data-full-src="./album/photo9.jpeg" data-description="Saya dan teman teman saya sedang mengerjakan proposal untuk tugas PKK kami di RPS TJKT!" onclick="showPreview(this)">
-    <img src="./thumbnail/kihajarstem-thumb.jpg" data-full-src="./album/kihajarstem-photo.jpg" data-description="Foto ini, diambil setelah kami mengerjakan soal Kihajar Stem!" onclick="showPreview(this)">
-    <img src="./thumbnail/thumbnailPerbanas.jpeg" data-full-src="./album/perbanasmoment.jpeg" data-description="Lomba kali ini memberikan banyak pengalaman untukku. Terimakasih teman-teman yang sudah berjuang bersama denganku." onclick="showPreview(this)">
+                <!-- Project 1 -->
+<!-- content -->
+<section id="projects">
+    <div class="container">
+        <div class="masonry">
+            <!-- Project 1 -->
+            <div class="masonry-item">
+                <div class="card">
+                    <img src="./proyek/tanamanhias.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Tanaman Hias dari Botol Bekas</h5>
+                        <p class="card-text">Saya membuat ini di ..</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="masonry-item">
+                <div class="card">
+                    <img src="./proyek/tanamanhiaskecil.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Membuat Pot Bunga Hias Simple</h5>
+                        <p class="card-text">Saya membuat pot bu ..</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="masonry-item">
+                <div class="card">
+                    <img src="./proyek/tugassejarah.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Membuat Scrapbook Menggunakan Buku</h5>
+                        <p class="card-text">Ini adalah sebuah scrapbook yang ..</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="masonry-item">
+                <div class="card">
+                    <img src="./proyek/tugasSBK.jpg" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Membuat Lukisan Dimedia Talenan</h5>
+                        <p class="card-text">Saya membuat lukisan ..</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal4">
+                            Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</section>
+<!-- end content -->
 
-<!-- preview image -->
-<div class="previewImage" id="previewImage" style="display: none;">
-    <img id="previewImg">
-    <div id="previewDescription"></div>
-    <span onclick="closePreviewImg()"><i class="fa fa-times-circle"></i></span>
-</div>
-<!-- end preview image -->
+    </section>
+    <!-- end content -->
 
-<!-- end preview image -->
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Tanaman Hias dari Botol Bekas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./proyek/tanamanhias.jpg" class="img-fluid mb-3" alt="Project 1">
+                    <p>Saya membuat ini di rumah menggunakan botol bekas yang di cat, dan ini adalah tugas Prakarya selama saya bersekolah di SMPN 10 Kota Bekasi</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Membuat Scrapbook Menggunakan Buku</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./proyek/tugassejarah.jpg" class="img-fluid mb-3" alt="Project 2">
+                    <p>Ini adalah sebuah scrapbook yang saya buat. namun disini, saya menggunakan sebuah buku dan menambahkan desain pada bukunya juga!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- javascript -->
-        <script>
-            function showPreview(imgElement) {
-                // Ambil src dari atribut data-full-src
-                const fullSrc = imgElement.getAttribute("data-full-src");
-                // Ambil deskripsi dari atribut data-description
-                const description = imgElement.getAttribute("data-description");
-                
-                // Temukan elemen gambar preview dan deskripsi
-                const previewImg = document.getElementById("previewImg");
-                const previewDescription = document.getElementById("previewDescription");
-                const previewImageContainer = document.getElementById("previewImage");
-                
-                // Set src gambar preview dan deskripsi
-                previewImg.src = fullSrc;
-                previewDescription.textContent = description;
-                
-                // Tampilkan gambar preview
-                previewImageContainer.style.display = "flex";
+    <!-- Modal for Project 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Membuat Pot Bunga Hias Simple
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./proyek/tanamanhiaskecil.jpg" class="img-fluid mb-3" alt="Project 3">
+                    <p">Saya membuat pot bunga hias dari kayu rotan, dan tempat bekas yang ada dirumah saya.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Project 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal4Label">Membuat Lukisan Dimedia Talenan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./proyek/tugasSBK.jpg" class="img-fluid mb-3" alt="Project 4">
+                    <p>Saya membuat lukisan menggunakan media talenan dan cat akrilik. Gambar ini saya re-draw dari hasil pencarian google.</p>
+                    <a href="https://www.instagram.com/p/C2cnZc8SwgYgacHBffL7sMTmy-rVzk48mWqloM0" style="text-decoration: none;">Klik disini untuk melihat video sinematik proses pembuatannya!</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- end content -->
+
+        <style>/* Modal image */
+/* CSS untuk memastikan modal muncul di tengah */
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100% - 1rem); /* Menjaga jarak dari atas dan bawah */
+}
+
+.modal-content {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Pastikan modal-content tidak terlalu besar di perangkat kecil */
+@media (max-width: 767.98px) {
+    .modal-dialog {
+        margin: 1rem;
+    }
+}
+
+            
+            /* Optional: Adjust modal padding for mobile devices */
+            @media (max-width: 767.98px) {
+                .modal-body {
+                    padding: 15px;
+                }
             }
             
-            function closePreviewImg() {
-                const previewImageContainer = document.getElementById("previewImage");
-                previewImageContainer.style.display = "none";
+            /* Optional: Add margin to text for better spacing */
+            .modal-body p {
+                margin-top: 15px;
             }
-        </script>
-        
-         
-        <!-- end javascript -->
+            /* CSS for the masonry effect */
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.masonry-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 120px;
+    }
+}
+
+            </style>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -227,7 +381,6 @@
         <script>
             AOS.init();
         </script>
-
 
         <!-- footer -->
         <hr>

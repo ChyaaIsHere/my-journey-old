@@ -1,16 +1,3 @@
-// about me
-function scrollToAbout() {
-  event.preventDefault();
-
-  var aboutSection = document.getElementById("tentangku");
-  var aboutSectionOffset = aboutSection.offsetTop;
-
-  window.scrollTo({
-    top: aboutSectionOffset,
-    behavior: "smooth",
-  });
-}
-
 AOS.init({
   easing: "ease-in-out",
 });
